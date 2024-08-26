@@ -103,18 +103,21 @@
             </div>
         </div>
     </section>
+  
     <script>
-                document.getElementById('loginForm').addEventListener('submit', function(event) { event.preventDefault();
-            var username = document.getElementById('username').value;
-            var password = document.getElementById('password').value;
-          if (username&&password) {
- 
-          alert('Username : ' + username + '\n' + 'Password: ' + password);
-               
-        document.getElementById('loginForm').reset();  } 
-       else {
-        alert('Please fill the form.');
-    }
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            
+           
+            var name = document.querySelector('input[name="name"]').value;
+            var email = document.querySelector('input[name="email"]').value;
+            var message = document.querySelector('textarea[name="message"]').value;
+            
+            
+            alert('Name: ' + name + '\n' + 'Email: ' + email + '\n' + 'Message: ' + message);
+            
+          
+            document.getElementById('contactForm').reset();
         });
     </script>
 </body>
