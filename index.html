@@ -103,5 +103,19 @@
             </div>
         </div>
     </section>
+    <script>
+                document.getElementById('loginForm').addEventListener('submit', function(event) { event.preventDefault();
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+          if (username&&password) {
+ 
+          alert('Username : ' + username + '\n' + 'Password: ' + password);
+               
+        document.getElementById('loginForm').reset();  } 
+       else {
+        alert('Please fill the form.');
+    }
+        });
+    </script>
 </body>
 </html>
